@@ -1,0 +1,173 @@
+/*Body*/
+body
+{
+    display: flex;
+    border: solid 1px  rgb(177, 172, 172);
+    padding: 0px;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+/*Partie de liseret*/
+#liseret
+{
+    width: 300px;
+    background-color: #FFC107;
+    overflow-wrap: break-word;
+}
+
+#liseret h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFC107;
+    padding: 5px;
+}
+#liseret section:nth-child(1)
+{
+    text-align: center;
+}
+#liseret section p img:nth-child(1)
+{
+    text-align: center;  
+}
+#liseret section p:nth-child(2)
+{
+    text-align: justify;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-bottom: 350px;
+}
+#liseret section img
+{
+    padding-top: 20px;
+    display: inline-flex;
+        
+}
+
+/*----------------Contenu du CV----------------*/
+#main
+{
+    padding: 30px;
+    margin: 20px;
+    width: 700px;
+}
+#main header
+{
+    margin-bottom: 120px;
+}
+header span
+{
+    color: #FFC107;
+}
+u
+{
+    text-decoration: #FFC107 underline;
+}
+#main section:nth-child(2)
+{
+    margin-bottom: 20px;
+}
+
+hr
+{
+    color: #FFC107;
+}
+thead:nth-child(odd)
+{
+    font-size: 0.7em;
+    color:black;
+    text-align: left;
+}
+thead img:nth-child(1)
+{
+    margin-right: 15px;
+}
+thead img:last-child
+{
+    width: 10px;
+}
+table img[alt="cercle"]
+{
+    width: 20px;
+}
+thead span
+{
+    color: black;
+    font-size: large;
+    text-align: left;
+    
+}
+
+table
+{
+    margin-top: 30px;
+}
+tbody td
+{
+    text-align: justify;
+}
+
+
+section div
+{
+    display: flex;
+}
+
+/*---------------------Bas de page footer---------------------*/
+section div h1,footer #bas_de_page h1
+{
+    margin-left: 30px;
+}
+footer #bas_de_page
+{
+    display: flex;
+    padding-top: 30px;
+    
+}
+#recommandation
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-right: 50px;
+    text-align: justify;
+    line-height: 0.5em;
+}
+
+/*--------------------------Media query responsive design ----------------*/
+
+@media screen and (max-width: 680px){
+    body 
+    {
+        background-color: cadetblue;
+    }
+    thead img:nth-child(1)
+    {
+        display: none;
+    }   
+
+    #liseret section p img:nth-child(1)
+    {
+    display: none;
+    }
+    #liseret
+    {
+        width: auto;
+    }
+}
+
+/*Règles CSS pour les mobiles*/
+@media screen and (min-width: 681px) and (max-width:1279px){
+    body 
+    {
+        flex-shrink: 1;
+        overflow-wrap: break-word;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (orientation: landscape){
+
+}
