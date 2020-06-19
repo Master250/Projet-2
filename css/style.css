@@ -145,28 +145,25 @@ footer #bas_de_page
     body 
     {
         overflow-wrap: break-word;
-        justify-content: center;
+        margin: 0px;
     }
-    /*thead img:nth-child(1)
-    {
-        display: none;
-    } */
-
-    /*#liseret
-    {
-        width: auto;
-    }*/
+    
 }
 
 /*Règles CSS pour les mobiles*/
-@media screen and (min-width: 980px) and (max-width:1279px){
+@media screen and (min-width: 681px) and (max-width:1279px){
     body 
     {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
 }
-
+@media screen and (min-width: 1280px)
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+}
 @media screen and (orientation: landscape){
 
 }
