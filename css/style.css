@@ -1,12 +1,14 @@
 /*Body*/
+
 body
 {
     display: flex;
-    border: solid 1px  rgb(177, 172, 172);
     padding: 0px;
+    width: 1000px;
+    border: silver 1px solid;
     margin-left: 200px;
-    margin-right: 150px;
 }
+
 /*Partie de liseret*/
 #liseret
 {
@@ -40,9 +42,8 @@ body
 }
 #liseret section img
 {
-    padding-top: 20px;
-    display: inline-flex;
-        
+    padding-top: 40px;
+    display: inline-flex;    
 }
 
 /*----------------Contenu du CV----------------*/
@@ -113,7 +114,10 @@ section div
 {
     display: flex;
 }
-
+section div img
+{
+    width: 30px;
+}
 /*---------------------Bas de page footer---------------------*/
 section div h1,footer #bas_de_page h1
 {
@@ -140,17 +144,18 @@ footer #bas_de_page
 @media screen and (max-width: 680px){
     body 
     {
-        background-color: cadetblue;
+        background-color: #FFC107;
+        overflow-wrap: break-word;
+        justify-content: center;
+        width: auto;
+        padding: 0;
+        margin: auto;
     }
     thead img:nth-child(1)
     {
         display: none;
-    }   
+    } 
 
-    #liseret section p img:nth-child(1)
-    {
-    display: none;
-    }
     #liseret
     {
         width: auto;
@@ -158,12 +163,10 @@ footer #bas_de_page
 }
 
 /*Règles CSS pour les mobiles*/
-@media screen and (min-width: 681px) and (max-width:1279px){
+@media screen and (min-width: 980px) and (max-width:1279px){
     body 
     {
-        flex-shrink: 1;
-        overflow-wrap: break-word;
-        justify-content: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
 }
