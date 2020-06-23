@@ -141,7 +141,7 @@ footer #bas_de_page
 
 /*--------------------------Media query responsive design ----------------*/
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 480px){
     body 
     {
         overflow-wrap: break-word;
@@ -150,15 +150,15 @@ footer #bas_de_page
     
 }
 
-/*Règles CSS pour les mobiles*/
-@media screen and (min-width: 681px) and (max-width:1279px){
+/*Règles CSS pour les appareils*/
+@media screen and (min-width: 481px) and (max-width:1279px){
     body 
     {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
 }
-@media screen and (min-width: 1280px)
+@media screen and (min-width: 1280px){
     body{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         
