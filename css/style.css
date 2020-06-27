@@ -5,6 +5,7 @@ body
     width: 980px;
     display: flex;
     border: silver 1px solid;
+    margin-left: 80px;
 }
 
 /*Partie de liseret*/
@@ -30,20 +31,20 @@ body
     padding: 5px;
     text-align: center;
 }
-#liseret section span:nth-child(1n), #liseret section address:nth-child(2n+1),#liseret section p:nth-child(1n)
+#liseret div span:nth-child(1n), #liseret div address:nth-child(2n+1),#liseret div p:nth-child(1n)
 {
     margin-left:30px;
 }
-#liseret section p:nth-child(2)
+#liseret div p:nth-child(2)
 {
     text-align: justify;
     flex-wrap: wrap;
     margin: 30px;
-    margin-bottom: 110px;
+    margin-bottom: 170px;
 }
-#liseret section img
+#liseret div img
 {
-    padding-top: 10px;
+    padding-top: 30px;
     display: inline-flex;   
 }
 
@@ -66,7 +67,7 @@ u
 {
     text-decoration: #FFC107 underline;
 }
-#main section:nth-child(2)
+#main div:nth-child(2)
 {
     margin-bottom: 20px;
 }
@@ -74,9 +75,7 @@ u
 hr
 {
     width: auto;
-    
     border: 1px solid #FFC107;
-    
 }
 thead:nth-child(odd)
 {
@@ -86,7 +85,8 @@ thead:nth-child(odd)
 }
 th:nth-child(2)
 {
-    width: 180px;
+    width: 25%;
+    padding-top: 10px;
 }
 thead img:nth-child(1)
 {
@@ -94,23 +94,25 @@ thead img:nth-child(1)
 }
 thead img:last-child
 {
-    width: 10px;
+    width: 20px;
 }
 table img[alt="cercle"]
 {
     width: 20px;
 }
+
 thead span
 {
     color: black;
     font-size: large;
     text-align: left;
-    
+    padding-top: 0px;
 }
 
 table
 {
     margin-top: 30px;
+    
 }
 tbody td
 {
@@ -118,46 +120,41 @@ tbody td
 }
 
 
-section div
+#contenu_cv div,#contenu_cv2 div
 {
     display: flex;
 }
-section div img
+#contenu_cv div img,#contenu_cv2 div img
 {
     width: 30px;
 }
 /*---------------------Bas de page footer---------------------*/
-section div h2,footer #bas_de_page h2
+#contenu_cv div h2,footer #bas_de_page h4,#contenu_cv2 div h2
 {
     margin-left: 20px;
 }
 footer #bas_de_page
 {
     display: flex;
-    padding-top: 60px;
+    padding-top: 20px;
     
 }
 #recommandation
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 10px;
     margin-right: 50px;
     text-align: justify;
     line-height: 0.5em;
-}
-
-/*--------------------------Media query responsive design ----------------*/
-
-@media screen and (max-width: 480px){
-    
+    margin-bottom: 30px;
 }
 
 /*Règles CSS pour les appareils*/
 
 /*--------------------------Media query responsive design ----------------*/
 
-@media all and (max-width: 480px){
+@media all and (max-width: 800px){
     body 
     {
         display: block;
@@ -191,10 +188,14 @@ footer #bas_de_page
     padding-top: 10px;
     text-align: center;
     }
+    #recommandation div:first-child
+    {
+        margin-bottom: 50px;
+    }
 }
 
 /*Règles CSS pour les appareils*/
-@media screen and (min-width: 481px) and (max-width:980px){
+@media screen and (min-width: 801px) and (max-width:1024px){
     
     body 
     {
@@ -202,15 +203,18 @@ footer #bas_de_page
         overflow-wrap: break-word;
         width: auto;
         height: auto;
+        margin: auto;
     }
     #liseret header img
     {
     justify-content: center;
-    width: 60%;  
+    width: 80%;  
+    margin-bottom: 40px;
+    padding-top: 40px;
     }
    #liseret
    {
-       width: 25%;
+       width: 35%;
        text-align: center;
    }
    #liseret h2
@@ -221,28 +225,34 @@ footer #bas_de_page
     color: #FFC107;
     padding: 5px;
     }
+    #main header
+    {
+    padding-top: 40px;
+    }
     #recommandation
     {
     display: flex;
     flex-direction: column;
     text-align: center;
     }
+
+    #recommandation div:first-child
+    {
+        margin-bottom: 30px;
+    }
+
+    #liseret div img
+    {
+        margin-top: 30px;
+    }
+
+    #liseret div p:nth-child(2)
+    {
+        margin-bottom: 90px;
+    }
 }
-@media all and (min-width: 981px){
+@media all and (min-width: 1025px){
     
-    #recommandation
-    {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
-    
-    }
-    body 
-    {
-        width: auto;
-        margin-left: 150px;
-        margin-right: 50px;
-    }
     
 }
 @media screen and (orientation: landscape){
