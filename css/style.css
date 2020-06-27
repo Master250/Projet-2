@@ -118,7 +118,10 @@ tbody td
 {
     text-align: justify;
 }
-
+tbody tr:nth-child(1)
+{
+    font-size: 0.9em;
+}
 
 #contenu_cv div,#contenu_cv2 div
 {
