@@ -2,11 +2,9 @@
 
 body
 {
+    width: 980px;
     display: flex;
-    padding: 0px;
-    width: 1000px;
     border: silver 1px solid;
-    margin-left: 200px;
 }
 
 /*Partie de liseret*/
@@ -15,47 +13,50 @@ body
     width: 300px;
     background-color: #FFC107;
     overflow-wrap: break-word;
+    
 }
 
-#liseret h1
+#liseret header img
 {
-    text-align: center;
+    justify-content: center;
+    width: 250px;  
+}
+
+#liseret h2
+{
     text-transform: uppercase;
     background-color: black;
     color: #FFC107;
     padding: 5px;
-}
-#liseret section:nth-child(1)
-{
     text-align: center;
 }
-#liseret section p img:nth-child(1)
+#liseret section span:nth-child(1n), #liseret section address:nth-child(2n+1),#liseret section p:nth-child(1n)
 {
-    text-align: center;  
+    margin-left:30px;
 }
 #liseret section p:nth-child(2)
 {
     text-align: justify;
     flex-wrap: wrap;
     margin: 30px;
-    margin-bottom: 350px;
+    margin-bottom: 110px;
 }
 #liseret section img
 {
-    padding-top: 40px;
-    display: inline-flex;    
+    padding-top: 10px;
+    display: inline-flex;   
 }
 
 /*----------------Contenu du CV----------------*/
 #main
 {
-    padding: 30px;
-    margin: 20px;
-    width: 700px;
+    padding: 20px;
+    margin: 0px;
+    
 }
 #main header
 {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 header span
 {
@@ -72,13 +73,20 @@ u
 
 hr
 {
-    color: #FFC107;
+    width: auto;
+    
+    border: 1px solid #FFC107;
+    
 }
 thead:nth-child(odd)
 {
     font-size: 0.7em;
     color:black;
     text-align: left;
+}
+th:nth-child(2)
+{
+    width: 180px;
 }
 thead img:nth-child(1)
 {
@@ -119,21 +127,21 @@ section div img
     width: 30px;
 }
 /*---------------------Bas de page footer---------------------*/
-section div h1,footer #bas_de_page h1
+section div h2,footer #bas_de_page h2
 {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 footer #bas_de_page
 {
     display: flex;
-    padding-top: 30px;
+    padding-top: 60px;
     
 }
 #recommandation
 {
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+    justify-content: space-evenly;
+    padding-top: 10px;
     margin-right: 50px;
     text-align: justify;
     line-height: 0.5em;
@@ -142,27 +150,100 @@ footer #bas_de_page
 /*--------------------------Media query responsive design ----------------*/
 
 @media screen and (max-width: 480px){
-    body 
-    {
-        overflow-wrap: break-word;
-        margin: 0px;
-    }
     
 }
 
 /*Règles CSS pour les appareils*/
-@media screen and (min-width: 481px) and (max-width:1279px){
+
+/*--------------------------Media query responsive design ----------------*/
+
+@media all and (max-width: 480px){
     body 
     {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        overflow-wrap: break-word;
+        margin: 0px;
+        margin-right: 0px;
+        width: auto;
+        height: auto;
     }
-
+    #liseret header img
+    {
+    justify-content: center;
+    width: 60%;  
+    }
+   #liseret, #main
+   {
+       width: auto;
+       text-align: center;
+   }
+   #liseret h2
+    {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFC107;
+    padding: 5px;
+    }
+    #recommandation
+    {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    }
 }
-@media screen and (min-width: 1280px){
-    body{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        
+
+/*Règles CSS pour les appareils*/
+@media screen and (min-width: 481px) and (max-width:980px){
+    
+    body 
+    {
+        display: flex;
+        overflow-wrap: break-word;
+        width: auto;
+        height: auto;
     }
+    #liseret header img
+    {
+    justify-content: center;
+    width: 60%;  
+    }
+   #liseret
+   {
+       width: 25%;
+       text-align: center;
+   }
+   #liseret h2
+    {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFC107;
+    padding: 5px;
+    }
+    #recommandation
+    {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+}
+@media all and (min-width: 981px){
+    
+    #recommandation
+    {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    
+    }
+    body 
+    {
+        width: auto;
+        margin-left: 150px;
+        margin-right: 50px;
+    }
+    
 }
 @media screen and (orientation: landscape){
 
